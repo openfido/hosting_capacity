@@ -11,14 +11,7 @@ for OPENFIDO_INPUT in $(find $PWD/autotest -name 'input_*' -print); do
     export OPENFIDO_OUTPUT=${OPENFIDO_INPUT/autotest\/input_/autotest\/output_}
     mkdir -p $OPENFIDO_OUTPUT
     rm -rf $OPENFIDO_OUTPUT/{*,.??*}
-    cp $OPENFIDO_INPUT/* $OPENFIDO_OUTPUT
-    cd $OPENFIDO_OUTPUT
-    if [ -f gridlabd.rc ]; then
-        OPTIONS=$(cat gridlabd.rc | tr '\n' ' ')
-    else
-        OPTIONS=$(ls -1 | tr '\n' ' ')
-    fi
-    if ! gridlabd $OPTIONS --redirect all ; then
+    if ! sh < openfido.sh 1>$OPENFIDO_OUTPUT/stdout 2>$OPENFIDO_OUTPUT/stderr; then
         FAILED=$(($FAILED+1)) 
         FILES="$FILES ${OPENFIDO_OUTPUT/$PWD\//}"
         echo "ERROR: $OPENFIDO_INPUT test failed"

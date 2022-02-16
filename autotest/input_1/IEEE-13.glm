@@ -1,13 +1,3 @@
-
-clock {
-	timestamp '2014-01-01 0:00:00';
-	timezone EST+5EDT;
-}
-
-#set profiler=1
-#set iteration_limit=100000;
-#set relax_naming_rules=1;
-
 module powerflow {
     solver_method NR;
 };

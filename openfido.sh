@@ -21,7 +21,7 @@ if [ ! -f "/usr/local/bin/gridlabd" ]; then
     echo "ERROR [openfido.sh]: '/usr/local/bin/gridlabd' not found" > /dev/stderr
     error
 elif [ ! -f "$OPENFIDO_INPUT/gridlabd.rc" ]; then
-    OPTIONS=$(ls -1 | tr '\n' ' ')
+    OPTIONS=$(cd $OPENFIDO_INPUT; ls -1 | tr '\n' ' ')
     if [ ! -z "$OPTIONS" ]; then
         echo "WARNING [openfido.sh]: '$OPENFIDO_INPUT/gridlabd.rc' not found, using all input files by default" > /dev/stderr
     else
@@ -29,7 +29,7 @@ elif [ ! -f "$OPENFIDO_INPUT/gridlabd.rc" ]; then
         error
     fi
 else
-    OPTIONS=$(cat gridlabd.rc | tr '\n' ' ')
+    OPTIONS=$(cd $OPENFIDO_INPUT ; cat gridlabd.rc | tr '\n' ' ')
 fi
 
 echo '*** INPUTS ***'

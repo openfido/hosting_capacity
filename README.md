@@ -1,7 +1,7 @@
-OpenFIDO Integration Capacity Analysis (ICA) pipeline
-=====================================================
+OpenFIDO Hosting Capacity Analysis pipeline
+===========================================
 
-The `integration_capacity` pipeline runs GridLAB-D ICA analysis template.
+The `hosting_capacity` pipeline runs GridLAB-D ICA analysis template.
 
 PIPELINE
 --------
@@ -13,7 +13,7 @@ Recommended pipeline settings:
 | Pipeline name           | GridLAB-D
 | Description             | Run GridLAB-D
 | DockerHub Repository    | slacgismo/gridlabd:latest
-| Git Clone URL (https)   | https://github.com/openfido/integration_capacity
+| Git Clone URL (https)   | https://github.com/openfido/hosting_capacity
 | Repository Branch       | main
 | Entrypoint Script (.sh) | openfido.sh
 

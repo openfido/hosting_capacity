@@ -1,5 +1,5 @@
 {
-  "description" : "Hosting capacity processing pipeline",
+  "description" : "Hosting capacity analysis pipeline",
   "docker" : "slacgismo/gridlabd:latest",
   "git" : "https://github.com/openfido/hosting_capacity.git",
   "branch" : "main",

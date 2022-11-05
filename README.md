@@ -1,4 +1,4 @@
-Pipeline status: [![validation](https://github.com/openfido/hosting_capacity/actions/workflows/main.yml/badge.svg)](https://github.com/openfido/hosting_capacity/actions/workflows/main.yml)
+Pipeline status: [![validation](https://github.com/openfido/hosting_capacity/actions/workflows/autotest.yml/badge.svg)](https://github.com/openfido/hosting_capacity/actions/workflows/autotest.yml)
 
 OpenFIDO Hosting Capacity Analysis pipeline
 ===========================================

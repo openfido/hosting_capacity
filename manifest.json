@@ -1,6 +1,6 @@
 {
   "description" : "Hosting capacity analysis pipeline",
-  "docker" : "slacgismo/gridlabd:latest",
+  "docker" : "lfenergy/arras:latest",
   "git" : "https://github.com/openfido/hosting_capacity.git",
   "branch" : "main",
   "script" : "openfido.sh"
